@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 💖</title>
+
+<style>
+body{
+margin:0;
+font-family:Poppins, sans-serif;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+text-align:center;
+}
+
+.card{
+width:90%;
+max-width:400px;
+background:rgba(255,255,255,0.2);
+padding:25px;
+border-radius:25px;
+backdrop-filter:blur(15px);
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+animation:fade 1s ease-in-out;
+}
+
+@keyframes fade{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+.characters{
+font-size:60px;
+margin-top:20px;
+animation:move 2s infinite alternate;
+}
+
+@keyframes move{
+from{transform:translateX(-5px);}
+to{transform:translateX(5px);}
+}
+
+button{
+margin-top:20px;
+padding:10px 25px;
+border:none;
+border-radius:25px;
+background:white;
+color:#ff4d6d;
+font-weight:bold;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Yayyy 😍</h2>
+
+<div class="characters">
+👦🏻 ➡️ 🌹 ➡️ 👧🏻
+</div>
+
+<p>
+Tomar jonno ei golap 🌹💖<br>
+Ebar ar rag koro na 😌
+</p>
+
+<button onclick="goBack()">Back</button>
+
+</div>
+
+<script>
+function goBack(){
+window.location.href="index.html";
+}
+</script>
+
+</body>
+</html>
